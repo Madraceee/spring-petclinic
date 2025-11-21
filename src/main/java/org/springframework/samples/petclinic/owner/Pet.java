@@ -46,6 +46,8 @@ import org.jspecify.annotations.Nullable;
 @Table(name = "pets")
 public class Pet extends NamedEntity {
 
+	private String name;
+
 	@Column(name = "birth_date")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private @Nullable LocalDate birthDate;
