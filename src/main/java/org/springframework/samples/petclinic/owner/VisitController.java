@@ -86,6 +86,11 @@ class VisitController {
 		return "pets/createOrUpdateVisitForm";
 	}
 
+	@GetMapping("/owners/{ownerId}/pets/{petId}/visits/count")
+	public Integer getCount() {
+		return 1;
+	}
+
 	// Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is
 	// called
 	@PostMapping("/owners/{ownerId}/pets/{petId}/visits/new")
